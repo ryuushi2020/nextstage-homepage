@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# バックアップファイル
+*_backup_*.html
+*.bak
+
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# Node.js (将来的にビルドツールを導入した場合)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ビルド出力
+dist/
+build/
+.next/
+out/
+
+# エディタ
+.vscode/
+.idea/
+
+# Claude Code設定
+.claude/
+
+# このディレクトリ内の無関係なファイル群
+Gemini/
+不動産書類テンプレート/
+nextstage_homepage.html
