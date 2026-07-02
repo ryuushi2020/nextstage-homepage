@@ -74,7 +74,15 @@
             "name": "軽貨物ドライバーは未経験でも応募できますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "未経験の方も応募できます。業務委託、歩合制、週1日から相談可能で、18歳以上、普通免許AT可です。"
+              "text": "未経験の方も応募できます。研修がありますので、初めての方も安心してスタートできます。業務委託、週1日から相談可能で、18歳以上、普通免許AT可です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "自分の車を持っていなくても働けますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい。車両の貸し出し制度がありますので、ご自身の車をお持ちでない方も始められます。詳しくはお電話でご相談ください。"
             }
           }
         ]
@@ -746,6 +754,41 @@
       font-size: 13px;
     }
 
+    .recruit-panel {
+      margin-top: 42px;
+      padding: 38px;
+      background: #fff;
+      border: 1px solid rgba(0, 111, 214, 0.28);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .recruit-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      color: #fff;
+      background: var(--blue);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .recruit-panel h3 {
+      margin: 18px 0 0;
+      font-size: 30px;
+      line-height: 1.28;
+    }
+
+    .recruit-lead {
+      max-width: 720px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
     .gallery-grid {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr 0.9fr;
@@ -1328,8 +1371,8 @@
         <span>平塚市・秦野市・伊勢原市</span>
       </div>
       <div class="hero-stat reveal">
-        <strong>求人募集中</strong>
-        <span>軽貨物ドライバー 業務委託</span>
+        <strong>積極採用中</strong>
+        <span>未経験OK・車両貸出あり</span>
       </div>
     </div>
 
@@ -1470,19 +1513,25 @@
           <span>軽貨物配送は個人・EC配送のみ。企業向けBtoB配送は現在対象外です。</span>
         </div>
 
-        <div class="job-grid" aria-label="軽貨物ドライバー募集条件">
-          <div class="job-card reveal"><strong>業務委託</strong><span>自分の働き方に合わせて相談</span></div>
-          <div class="job-card reveal"><strong>歩合制</strong><span>稼働内容に応じた報酬</span></div>
-          <div class="job-card reveal"><strong>週1日〜OK</strong><span>無理なく始めやすい条件</span></div>
-          <div class="job-card reveal"><strong>18歳以上</strong><span>普通免許AT可</span></div>
-        </div>
+        <div class="recruit-panel reveal" id="recruit">
+          <span class="recruit-badge">ドライバー積極募集中</span>
+          <h3>いま、一緒に走ってくれる仲間を探しています。</h3>
+          <p class="recruit-lead">配送のご依頼が増えており、ドライバーが不足しています。未経験の方も研修からスタートでき、車両の貸し出し制度もあるため、ご自身の車をお持ちでなくても始められます。まずはお気軽にお電話ください。</p>
 
-        <div class="section-actions">
-          <a class="button button-primary" href="tel:0463530151">
-            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
-            電話で応募・相談する
-          </a>
-          <a class="button button-light" href="#contact">問い合わせ先を見る</a>
+          <div class="job-grid" aria-label="軽貨物ドライバー募集条件">
+            <div class="job-card reveal"><strong>未経験OK</strong><span>研修があるので初めてでも安心</span></div>
+            <div class="job-card reveal"><strong>車両貸出あり</strong><span>車を持っていなくても始められる</span></div>
+            <div class="job-card reveal"><strong>週1日〜OK</strong><span>無理なく始めやすい条件</span></div>
+            <div class="job-card reveal"><strong>業務委託</strong><span>18歳以上 / 普通免許AT可</span></div>
+          </div>
+
+          <div class="section-actions">
+            <a class="button button-primary" href="tel:0463530151">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+              電話で応募・相談する
+            </a>
+            <a class="button button-light" href="#contact">問い合わせ先を見る</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1613,7 +1662,11 @@
           </details>
           <details class="faq-item reveal">
             <summary>軽貨物ドライバーは未経験でも応募できますか？</summary>
-            <p>未経験の方も応募できます。業務委託、歩合制、週1日から相談可能で、18歳以上、普通免許AT可です。</p>
+            <p>未経験の方も応募できます。研修がありますので、初めての方も安心してスタートできます。業務委託、週1日から相談可能で、18歳以上、普通免許AT可です。</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>自分の車を持っていなくても働けますか？</summary>
+            <p>はい。車両の貸し出し制度がありますので、ご自身の車をお持ちでない方も始められます。詳しくはお電話でご相談ください。</p>
           </details>
           <details class="faq-item reveal">
             <summary>営業時間を教えてください。</summary>
