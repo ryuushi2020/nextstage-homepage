@@ -3,924 +3,1662 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>株式会社琉新</title>
-  <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic UI", sans-serif;
-      background: #fff;
-      color: #1d1d1f;
-      line-height: 1.6;
-    }
-    a { text-decoration: none; color: inherit; }
+  <title>株式会社琉新｜平塚市の車整備・不動産・軽貨物配送</title>
+  <meta name="description" content="神奈川県平塚市の株式会社琉新。車整備工場、不動産会社、個人・EC配送向けの軽貨物配送を展開。平塚市・秦野市・伊勢原市を中心に、相談しやすく丁寧な対応を大切にしています。軽貨物ドライバー求人も募集中です。" />
+  <meta name="keywords" content="株式会社琉新,琉新,平塚市,車整備,自動車整備,不動産,軽貨物配送,EC配送,個人宅配送,軽貨物ドライバー求人,秦野市,伊勢原市" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ryuushin.pages.dev/" />
 
-    /* ===== Nav ===== */
-    nav {
+  <meta property="og:title" content="株式会社琉新｜平塚市の車整備・不動産・軽貨物配送" />
+  <meta property="og:description" content="平塚市を拠点に、車整備・不動産・個人/EC配送向け軽貨物配送を展開する株式会社琉新の公式サイトです。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ryuushin.pages.dev/" />
+  <meta property="og:image" content="https://ryuushin.pages.dev/images/hero-services.png" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#111315" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "AutoRepair"],
+        "@id": "https://ryuushin.pages.dev/#business",
+        "name": "株式会社琉新",
+        "url": "https://ryuushin.pages.dev/",
+        "telephone": "0463-53-0151",
+        "priceRange": "要見積もり",
+        "image": "https://ryuushin.pages.dev/images/hero-services.png",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "254-0014",
+          "addressRegion": "神奈川県",
+          "addressLocality": "平塚市",
+          "streetAddress": "城所903-1",
+          "addressCountry": "JP"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "areaServed": ["平塚市", "秦野市", "伊勢原市"],
+        "description": "株式会社琉新は、神奈川県平塚市を拠点に車整備工場、不動産会社、個人・EC配送向け軽貨物配送を展開しています。"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ryuushin.pages.dev/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "対応エリアはどこですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "平塚市をメインに、秦野市、伊勢原市を中心として対応しています。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "軽貨物配送は企業向けにも対応していますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "現在は個人向け配送およびEC配送を中心に対応しています。企業向けBtoB配送は対象外です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "軽貨物ドライバーは未経験でも応募できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "未経験の方も応募できます。業務委託、歩合制、週1日から相談可能で、18歳以上、普通免許AT可です。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #111315;
+      --ink-soft: #2c3034;
+      --muted: #626a72;
+      --subtle: #8a929a;
+      --line: #e4e7ea;
+      --paper: #ffffff;
+      --wash: #f6f7f8;
+      --wash-strong: #eef1f4;
+      --blue: #006fd6;
+      --blue-dark: #064d92;
+      --green: #0f766e;
+      --amber: #b66a1e;
+      --wine: #8a2635;
+      --shadow: 0 18px 48px rgba(17, 19, 21, 0.08);
+      --radius: 8px;
+      --max: 1180px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", "Noto Sans JP", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(0, 111, 214, 0.42);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -60px;
+      z-index: 999;
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: var(--radius);
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .site-header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: saturate(180%) blur(20px);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: rgba(255, 255, 255, 0.88);
+      border-bottom: 1px solid rgba(228, 231, 234, 0.86);
+      backdrop-filter: blur(18px);
     }
-    .nav-inner {
-      width: 100%;
-      max-width: 1200px;
+
+    .nav {
+      width: min(100%, var(--max));
+      min-height: 64px;
+      margin: 0 auto;
       padding: 0 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 24px;
     }
-    .nav-logo {
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0px;
-      color: #1d1d1f;
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: var(--ink);
+      white-space: nowrap;
     }
-    .nav-logo span { color: #0099cc; }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent 44%),
+        linear-gradient(135deg, var(--ink), var(--blue-dark));
+      font-size: 14px;
+      font-weight: 800;
+    }
+
     .nav-links {
       display: flex;
-      gap: 28px;
-      list-style: none;
-    }
-    .nav-links a {
-      font-size: 13px;
-      color: #444;
-      font-weight: 400;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: #0071e3; }
-    .nav-cta {
-      background: #0071e3;
-      color: #fff !important;
-      padding: 7px 16px;
-      border-radius: 980px;
-      font-size: 13px !important;
-      font-weight: 500 !important;
-      transition: background 0.2s !important;
-    }
-    .nav-cta:hover { background: #0077ed !important; color: #fff !important; }
-
-    /* ===== Hero ===== */
-    .hero {
-      text-align: center;
-      padding: 100px 24px 80px;
-      background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
-    }
-    .hero-badge {
-      display: inline-block;
-      background: #e8f0fe;
-      color: #0071e3;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      padding: 5px 14px;
-      border-radius: 980px;
-      margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-size: clamp(36px, 6vw, 64px);
-      font-weight: 700;
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-      margin-bottom: 20px;
-      color: #1d1d1f;
-    }
-    .hero h1 em {
-      font-style: normal;
-      background: linear-gradient(90deg, #0071e3, #34aadc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero p {
-      font-size: clamp(17px, 2vw, 21px);
-      color: #6e6e73;
-      max-width: 600px;
-      margin: 0 auto 36px;
-      font-weight: 300;
-    }
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .btn-primary {
-      background: #0071e3;
-      color: #fff;
-      padding: 14px 28px;
-      border-radius: 980px;
-      font-size: 16px;
-      font-weight: 500;
-      transition: background 0.2s, transform 0.15s;
-      display: inline-block;
-    }
-    .btn-primary:hover { background: #0077ed; transform: scale(1.02); }
-    .btn-secondary {
-      background: transparent;
-      color: #0071e3;
-      border: 1.5px solid #0071e3;
-      padding: 13px 28px;
-      border-radius: 980px;
-      font-size: 16px;
-      font-weight: 500;
-      transition: all 0.2s;
-      display: inline-block;
-    }
-    .btn-secondary:hover { background: #0071e3; color: #fff; }
-
-    /* ===== Section Titles ===== */
-    .section-header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-    .section-header h2 {
-      font-size: clamp(28px, 4vw, 48px);
-      font-weight: 700;
-      letter-spacing: -0.8px;
-      color: #1d1d1f;
-      margin-bottom: 10px;
-    }
-    .section-header p {
-      font-size: 17px;
-      color: #6e6e73;
-      max-width: 480px;
-      margin: 0 auto;
-    }
-
-    /* ===== Category Cards ===== */
-    .categories {
-      padding: 80px 24px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .category-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-    }
-    @media (max-width: 1024px) { .category-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 640px) { .category-grid { grid-template-columns: 1fr; } }
-    .category-card {
-      border-radius: 20px;
-      overflow: hidden;
-      position: relative;
-      min-height: 480px;
-      display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: flex-end;
-      padding: 40px;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      gap: 22px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: var(--ink-soft);
+      font-size: 14px;
     }
-    .category-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
-    .category-card.car {
-      background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+
+    .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
     }
-    .category-card.realestate {
-      background: linear-gradient(160deg, #0a2942 0%, #0d3b5e 50%, #1a6b8a 100%);
+
+    .nav-links a:hover {
+      color: var(--blue);
     }
-    .category-card.delivery {
-      background: linear-gradient(160deg, #1a2e1a 0%, #1e3d1e 50%, #2d6a2d 100%);
-    }
-    .card-icon {
-      font-size: 64px;
-      position: absolute;
-      top: 40px;
-      right: 40px;
-      opacity: 0.15;
-    }
-    .card-tag {
-      display: inline-block;
-      background: rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.9);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      padding: 4px 12px;
-      border-radius: 980px;
-      margin-bottom: 14px;
-      width: fit-content;
-    }
-    .card-tag.new { background: #0071e3; }
-    .category-card h3 {
-      font-size: 34px;
-      font-weight: 700;
+
+    .nav-phone {
+      gap: 7px;
+      padding: 0 14px;
       color: #fff;
-      letter-spacing: -0.5px;
-      line-height: 1.1;
-      margin-bottom: 12px;
+      background: var(--ink);
+      border-radius: 999px;
+      font-weight: 700;
     }
-    .category-card p {
-      font-size: 15px;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 28px;
+
+    .nav-phone:hover {
+      color: #fff;
+      background: var(--blue-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-button {
+      display: none;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      cursor: pointer;
+      background: #fff;
+    }
+
+    .menu-button span,
+    .menu-button span::before,
+    .menu-button span::after {
+      width: 18px;
+      height: 2px;
+      display: block;
+      background: var(--ink);
+      border-radius: 999px;
+      content: "";
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .menu-button span::before {
+      transform: translateY(-6px);
+    }
+
+    .menu-button span::after {
+      transform: translateY(4px);
+    }
+
+    .mobile-panel {
+      display: none;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.98);
+    }
+
+    .mobile-panel a {
+      display: block;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(248, 251, 255, 0.98) 0%, rgba(248, 251, 255, 0.94) 36%, rgba(248, 251, 255, 0.38) 58%, rgba(248, 251, 255, 0.02) 100%),
+        url("./images/hero-services.png") center / cover no-repeat,
+        linear-gradient(135deg, #f8fbff, #eef5fb);
+    }
+
+    .hero::after {
+      position: absolute;
+      inset: auto 0 0;
+      height: 120px;
+      content: "";
+      background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.7));
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 96px 24px 84px;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: 64px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 620px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .hero-actions,
+    .section-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 800;
+      line-height: 1.2;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      color: #fff;
+      background: var(--blue);
+    }
+
+    .button-primary:hover {
+      background: var(--blue-dark);
+    }
+
+    .button-light {
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .button-outline {
+      color: var(--blue-dark);
+      border-color: rgba(0, 111, 214, 0.28);
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .button-outline:hover {
+      color: #fff;
+      background: var(--blue-dark);
+    }
+
+    .button-dark {
+      color: #fff;
+      background: var(--ink);
+    }
+
+    .button-dark:hover {
+      background: var(--blue-dark);
+    }
+
+    .button svg {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 auto;
+    }
+
+    .hero-strip {
+      width: min(100%, var(--max));
+      margin: -34px auto 0;
+      padding: 0 24px;
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .hero-stat {
+      min-height: 104px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(228, 231, 234, 0.86);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .hero-stat span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
       line-height: 1.5;
-      max-width: 340px;
     }
-    .card-link {
+
+    .section {
+      padding: 108px 24px;
+    }
+
+    .section.compact {
+      padding-top: 78px;
+      padding-bottom: 78px;
+    }
+
+    .band {
+      background: var(--wash);
+    }
+
+    .inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      margin: 0 0 12px;
+      color: var(--blue-dark);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .section-title {
+      max-width: 780px;
+      margin: 0;
+      font-size: 46px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .section-copy {
+      max-width: 680px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 42px;
+    }
+
+    .service-card,
+    .feature-card,
+    .job-card,
+    .gallery-card,
+    .faq-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .service-card {
+      display: grid;
+      min-height: 520px;
+      grid-template-rows: auto 178px 1fr auto;
+      padding: 18px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 6px 6px 0;
+    }
+
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      border-radius: 50%;
+    }
+
+    .service-icon.blue {
+      background: var(--blue-dark);
+    }
+
+    .service-icon.green {
+      background: var(--green);
+    }
+
+    .service-icon.amber {
+      background: var(--amber);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 10px;
+      color: var(--muted);
+      background: var(--wash);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .service-image {
+      width: 100%;
+      height: 178px;
+      margin-top: 18px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      background: var(--wash-strong);
+    }
+
+    .service-card h3 {
+      margin: 24px 6px 12px;
+      font-size: 28px;
+      line-height: 1.24;
+      letter-spacing: 0;
+    }
+
+    .service-card p {
+      margin: 0 6px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .service-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      color: #34aadc;
-      font-size: 15px;
-      font-weight: 500;
-      transition: gap 0.2s;
+      width: fit-content;
+      margin: 28px 6px 6px;
+      color: var(--blue);
+      font-weight: 800;
     }
-    .card-link:hover { gap: 10px; }
-    .card-link::after { content: "→"; }
 
-    /* ===== Features ===== */
-    .features {
-      background: #f5f5f7;
-      padding: 80px 24px;
+    .visual-panel {
+      position: relative;
+      min-height: 520px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(17, 19, 21, 0.1), rgba(17, 19, 21, 0.38)),
+        url("./images/service-car.png") center / cover no-repeat,
+        linear-gradient(135deg, #d8dde3, #f5f7f9);
+      box-shadow: var(--shadow);
     }
-    .features-inner { max-width: 1200px; margin: 0 auto; }
-    .features-grid {
+
+    .visual-panel::before {
+      position: absolute;
+      inset: 22px;
+      content: "";
+      border: 1px solid rgba(255, 255, 255, 0.46);
+      border-radius: var(--radius);
+      pointer-events: none;
+    }
+
+    .visual-caption {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      padding: 18px;
+      color: #fff;
+      background: rgba(17, 19, 21, 0.62);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      backdrop-filter: blur(12px);
+    }
+
+    .visual-caption strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .visual-caption span {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 13px;
+    }
+
+    .feature-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    @media (max-width: 900px) { .features-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 600px) { .features-grid { grid-template-columns: 1fr; } }
-    .feature-card {
-      background: #fff;
-      border-radius: 18px;
-      padding: 36px 32px;
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-    .feature-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
-    .feature-icon {
-      font-size: 36px;
-      margin-bottom: 18px;
-    }
-    .feature-card h4 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      letter-spacing: -0.3px;
-    }
-    .feature-card p {
-      font-size: 14px;
-      color: #6e6e73;
-      line-height: 1.6;
+      gap: 16px;
+      margin-top: 42px;
     }
 
-    /* ===== AI Section ===== */
-    .ai-section {
-      padding: 80px 24px;
-      max-width: 1200px;
-      margin: 0 auto;
+    .feature-card {
+      padding: 26px;
     }
-    .ai-card {
-      background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
-      border-radius: 24px;
-      padding: 64px;
+
+    .feature-card h3 {
+      margin: 18px 0 10px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .line-icon {
+      width: 34px;
+      height: 34px;
+      color: var(--blue-dark);
+    }
+
+    .service-detail {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
+      gap: 16px;
+      margin-top: 42px;
     }
-    @media (max-width: 768px) { .ai-card { grid-template-columns: 1fr; padding: 40px 28px; } }
-    .ai-text h2 {
-      font-size: clamp(28px, 4vw, 44px);
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -0.8px;
-      margin-bottom: 16px;
-      line-height: 1.15;
-    }
-    .ai-text h2 span {
-      background: linear-gradient(90deg, #0071e3, #34aadc, #5ac8fa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .ai-text p {
-      font-size: 16px;
-      color: rgba(255,255,255,0.65);
-      line-height: 1.7;
-      margin-bottom: 28px;
-    }
-    .ai-badges {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 28px;
-    }
-    .ai-badge {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.85);
-      font-size: 13px;
-      padding: 6px 14px;
-      border-radius: 980px;
-      font-weight: 500;
-    }
-    .ai-visual {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 28px;
-      font-family: "SF Mono", "Fira Code", monospace;
-      font-size: 13px;
-      line-height: 2;
-      color: rgba(255,255,255,0.7);
-    }
-    .ai-visual .line { display: flex; gap: 10px; align-items: center; }
-    .ai-visual .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .dot-blue { background: #0071e3; }
-    .dot-green { background: #30d158; }
-    .dot-orange { background: #ff9f0a; }
-    .ai-visual strong { color: #fff; font-weight: 600; }
 
-    /* ===== Stats ===== */
-    .stats {
-      background: #f5f5f7;
-      padding: 60px 24px;
-      text-align: center;
+    .detail-block {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line);
     }
-    .stats-inner {
-      max-width: 1000px;
-      margin: 0 auto;
+
+    .detail-block h3 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      line-height: 1.3;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 26px;
+      color: var(--ink-soft);
+    }
+
+    .check-list li::before {
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+      content: "";
+    }
+
+    .note {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-top: 22px;
+      padding: 16px;
+      color: var(--ink-soft);
+      background: #fff7eb;
+      border: 1px solid #f0d7b7;
+      border-radius: var(--radius);
+      font-size: 14px;
+    }
+
+    .job-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-    @media (max-width: 700px) { .stats-inner { grid-template-columns: 1fr 1fr; } }
-    .stat-item {}
-    .stat-num {
-      font-size: 48px;
-      font-weight: 700;
-      color: #1d1d1f;
-      letter-spacing: -1px;
-    }
-    .stat-num span { color: #0071e3; }
-    .stat-label {
-      font-size: 14px;
-      color: #6e6e73;
-      margin-top: 4px;
+      gap: 12px;
+      margin-top: 32px;
     }
 
-    /* ===== CTA ===== */
-    .cta-section {
-      text-align: center;
-      padding: 100px 24px;
+    .job-card {
+      padding: 20px;
       background: #fff;
     }
-    .cta-section h2 {
-      font-size: clamp(28px, 4vw, 48px);
-      font-weight: 700;
-      letter-spacing: -0.8px;
-      margin-bottom: 16px;
-    }
-    .cta-section p {
+
+    .job-card strong {
+      display: block;
       font-size: 18px;
-      color: #6e6e73;
-      margin-bottom: 36px;
     }
 
-    /* ===== Footer ===== */
-    footer {
-      background: #f5f5f7;
-      padding: 40px 24px 28px;
-      border-top: 1px solid rgba(0,0,0,0.08);
+    .job-card span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
     }
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .footer-grid {
+
+    .gallery-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 36px;
+      grid-template-columns: 1.1fr 0.9fr 0.9fr;
+      gap: 16px;
+      margin-top: 42px;
     }
-    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
-    .footer-brand h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-    .footer-brand h3 span { color: #0071e3; }
-    .footer-brand p { font-size: 13px; color: #6e6e73; line-height: 1.6; }
-    .footer-col h4 { font-size: 13px; font-weight: 600; margin-bottom: 14px; }
-    .footer-col ul { list-style: none; }
-    .footer-col li { margin-bottom: 8px; }
-    .footer-col a { font-size: 13px; color: #6e6e73; transition: color 0.2s; }
-    .footer-col a:hover { color: #0071e3; }
-    .footer-bottom {
-      border-top: 1px solid rgba(0,0,0,0.08);
-      padding-top: 20px;
-      display: flex;
-      justify-content: space-between;
+
+    .gallery-card {
+      min-height: 320px;
+      position: relative;
+      overflow: hidden;
+      background: var(--wash-strong);
+    }
+
+    .gallery-card.large {
+      min-height: 470px;
+      grid-row: span 2;
+    }
+
+    .gallery-card.workshop {
+      background:
+        linear-gradient(180deg, rgba(17, 19, 21, 0.08), rgba(17, 19, 21, 0.55)),
+        url("./images/service-car.png") center / cover no-repeat,
+        linear-gradient(135deg, #dfe5eb, #f9fafb);
+    }
+
+    .gallery-card.vehicle {
+      background:
+        linear-gradient(180deg, rgba(17, 19, 21, 0.04), rgba(17, 19, 21, 0.48)),
+        url("./images/service-delivery.png") center / cover no-repeat,
+        linear-gradient(135deg, #e3ecea, #f7faf9);
+    }
+
+    .gallery-card.property {
+      background:
+        linear-gradient(180deg, rgba(17, 19, 21, 0.06), rgba(17, 19, 21, 0.5)),
+        url("./images/service-realestate.png") center / cover no-repeat,
+        linear-gradient(135deg, #ece6dc, #fbfaf8);
+    }
+
+    .gallery-card.parts {
+      background:
+        linear-gradient(180deg, rgba(17, 19, 21, 0.06), rgba(17, 19, 21, 0.5)),
+        url("./images/hero-services.png") center / cover no-repeat,
+        linear-gradient(135deg, #e2e4e6, #fafafa);
+    }
+
+    .gallery-label {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      color: #fff;
+    }
+
+    .gallery-label strong {
+      display: block;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .gallery-label span {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 13px;
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 42px;
+      align-items: stretch;
+    }
+
+    .area-map {
+      min-height: 410px;
+      border: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radius);
+      background: var(--wash-strong);
+    }
+
+    .area-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .area-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
       align-items: center;
-      flex-wrap: wrap;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .area-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .area-item strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .area-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 18px;
+      margin-top: 42px;
+      align-items: start;
+    }
+
+    .contact-info,
+    .contact-call {
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .contact-info dl {
+      margin: 0;
+      display: grid;
+      gap: 18px;
+    }
+
+    .contact-info dt {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .contact-info dd {
+      margin: 4px 0 0;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .contact-call {
+      min-height: 100%;
+      display: grid;
+      align-content: center;
+      gap: 22px;
+      background:
+        linear-gradient(135deg, rgba(0, 111, 214, 0.08), rgba(15, 118, 110, 0.08)),
+        #fff;
+    }
+
+    .contact-call h3 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.28;
+    }
+
+    .contact-call p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .phone-large {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      width: fit-content;
+      padding: 18px 24px;
+      color: #fff;
+      background: var(--blue);
+      border-radius: 999px;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 18px 36px rgba(0, 111, 214, 0.22);
+    }
+
+    .phone-large:hover {
+      background: var(--blue-dark);
+    }
+
+    .phone-large svg {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 auto;
+    }
+
+    .phone-note {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .phone-note li {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .phone-note li::before {
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      content: "";
+    }
+
+    .faq-list {
+      margin-top: 42px;
+      display: grid;
       gap: 10px;
     }
-    .footer-bottom p { font-size: 12px; color: #6e6e73; }
+
+    .faq-item {
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-weight: 800;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      width: 28px;
+      height: 28px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      content: "+";
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item p {
+      margin: 0;
+      padding: 0 24px 22px;
+      color: var(--muted);
+    }
+
+    .footer {
+      padding: 48px 24px 36px;
+      color: rgba(255, 255, 255, 0.76);
+      background: var(--ink);
+    }
+
+    .footer-grid {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr 0.75fr 0.75fr;
+      gap: 28px;
+    }
+
+    .footer h2,
+    .footer h3 {
+      margin: 0 0 12px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .footer p,
+    .footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .footer li + li {
+      margin-top: 8px;
+    }
+
+    .footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      width: min(100%, var(--max));
+      margin: 34px auto 0;
+      padding-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 12px;
+    }
+
+    .reveal {
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        .reveal {
+          animation: reveal-up linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 28%;
+        }
+      }
+
+      @keyframes reveal-up {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menu-button {
+        display: flex;
+      }
+
+      .menu-toggle:checked ~ .nav .menu-button span {
+        transform: rotate(45deg);
+      }
+
+      .menu-toggle:checked ~ .nav .menu-button span::before {
+        transform: translateY(0) rotate(90deg);
+      }
+
+      .menu-toggle:checked ~ .nav .menu-button span::after {
+        opacity: 0;
+      }
+
+      .menu-toggle:checked ~ .mobile-panel {
+        display: block;
+      }
+
+      .hero {
+        min-height: 560px;
+        background:
+          linear-gradient(90deg, rgba(248, 251, 255, 0.98) 0%, rgba(248, 251, 255, 0.94) 50%, rgba(248, 251, 255, 0.24) 100%),
+          url("./images/hero-services.png") center / cover no-repeat,
+          linear-gradient(135deg, #f8fbff, #eef5fb);
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero-strip,
+      .service-grid,
+      .feature-grid,
+      .job-grid,
+      .gallery-grid,
+      .areas,
+      .contact-layout,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .split,
+      .service-detail {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-card.large {
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        padding: 0 16px;
+      }
+
+      .brand-text {
+        max-width: 168px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .hero {
+        min-height: 610px;
+        background-position: center;
+        background:
+          linear-gradient(180deg, rgba(248, 251, 255, 0.98) 0%, rgba(248, 251, 255, 0.94) 52%, rgba(248, 251, 255, 0.42) 100%),
+          url("./images/hero-services.png") center bottom / cover no-repeat,
+          linear-gradient(135deg, #f8fbff, #eef5fb);
+      }
+
+      .hero-inner {
+        padding: 96px 18px 48px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero-lead {
+        font-size: 16px;
+      }
+
+      .hero-actions,
+      .section-actions {
+        align-items: stretch;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .hero-strip,
+      .service-grid,
+      .feature-grid,
+      .job-grid,
+      .gallery-grid,
+      .areas,
+      .contact-layout,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 76px 18px;
+      }
+
+      .section.compact {
+        padding-top: 58px;
+        padding-bottom: 58px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+
+      .section-copy {
+        font-size: 15px;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .service-card h3 {
+        margin-top: 22px;
+        font-size: 24px;
+      }
+
+      .service-image {
+        height: 190px;
+      }
+
+      .visual-panel,
+      .area-map {
+        min-height: 340px;
+      }
+
+      .detail-block,
+      .contact-info,
+      .contact-call {
+        padding: 24px;
+      }
+
+      .phone-large {
+        width: 100%;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
+
 <body>
+  <a class="skip-link" href="#main">本文へ移動</a>
 
-<!-- ===== Navigation ===== -->
-<nav>
-  <div class="nav-inner">
-    <div class="nav-logo">株式会社<span>琉新</span></div>
-    <ul class="nav-links">
-      <li><a href="#categories">サービス</a></li>
-      <li><a href="#delivery-service">配送</a></li>
-      <li><a href="#recruit">求人</a></li>
-      <li><a href="#price">工賃・料金</a></li>
-      <li><a href="#access">アクセス</a></li>
-      <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
-    </ul>
-  </div>
-</nav>
+  <header class="site-header">
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="メニューを開閉" />
+    <nav class="nav" aria-label="主要ナビゲーション">
+      <a class="brand" href="#top" aria-label="株式会社琉新 トップへ">
+        <span class="brand-mark" aria-hidden="true">琉</span>
+        <span class="brand-text">株式会社琉新</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">事業内容</a></li>
+        <li><a href="#maintenance">車整備</a></li>
+        <li><a href="#delivery">軽貨物・求人</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a class="nav-phone" href="tel:0463530151" aria-label="0463-53-0151に電話する">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+          電話する
+        </a></li>
+      </ul>
+      <label class="menu-button" for="menu-toggle" aria-label="メニューを開閉"><span></span></label>
+    </nav>
+    <div class="mobile-panel" aria-label="モバイルナビゲーション">
+      <a href="#services">事業内容</a>
+      <a href="#maintenance">車整備</a>
+      <a href="#delivery">軽貨物・求人</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </div>
+  </header>
 
-<!-- ===== Hero ===== -->
-<section class="hero">
-  <div class="hero-badge">✦ 株式会社琉新</div>
-  <h1>すべては、<br><em>あなたの未来</em>のために。</h1>
-  <p>車の整備から、不動産の取得まで。<br>AI技術を活用したワンストップサービスを提供します。</p>
-  <div class="hero-actions">
-    <a href="#categories" class="btn-primary">サービスを見る</a>
-    <a href="#ai" class="btn-secondary">AI分析について</a>
-  </div>
-</section>
-
-<!-- ===== Category Cards ===== -->
-<section class="categories" id="categories">
-  <div class="section-header">
-    <h2>私たちのサービス</h2>
-    <p>専門知識とAI技術を融合させた、次世代のサービスをご提供します。</p>
-  </div>
-  <div class="category-grid">
-    <!-- Car Service -->
-    <div class="category-card car">
-      <div class="card-icon">🔧</div>
-      <div>
-        <div class="card-tag new">NEW</div>
-        <h3>車整備工場</h3>
-        <p>最新の診断機器とAI予測メンテナンスで、あなたの愛車を最高の状態に保ちます。定期点検から大規模修理まで対応。</p>
-        <a href="#" class="card-link">詳しく見る</a>
-      </div>
-    </div>
-    <!-- Real Estate -->
-    <div class="category-card realestate">
-      <div class="card-icon">🏢</div>
-      <div>
-        <div class="card-tag">FEATURED</div>
-        <h3>不動産会社</h3>
-        <p>AIによる市場分析と豊富な物件データを駆使し、投資・居住に最適な不動産をご提案します。</p>
-        <a href="#" class="card-link">物件を探す</a>
-      </div>
-    </div>
-    <!-- Delivery -->
-    <div class="category-card delivery">
-      <div class="card-icon">🚐</div>
-      <div>
-        <div class="card-tag new">NEW</div>
-        <h3>軽貨物配送業</h3>
-        <p>スピーディかつ丁寧な配送サービスを提供。EC・企業物流・個人宅配まで幅広く対応します。</p>
-        <a href="#delivery-service" class="card-link">詳しく見る</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Features ===== -->
-<section class="features" id="features">
-  <div class="features-inner">
-    <div class="section-header">
-      <h2>選ばれる理由</h2>
-      <p>データと技術が、あなたの意思決定をサポートします。</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🤖</div>
-        <h4>AI自動分析</h4>
-        <p>Claude・Geminiを活用し、不動産市場データや車両データをリアルタイムで分析。正確な情報を素早くお届けします。</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
-        <h4>データドリブン</h4>
-        <p>収集した膨大なデータを元に、相場・利回り・メンテナンスコストを可視化。投資判断を強力にサポート。</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔒</div>
-        <h4>安心のサポート</h4>
-        <p>24時間AIチャットサポートに加え、専門スタッフによる対面相談も対応。はじめての方も安心してご利用いただけます。</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">⚡</div>
-        <h4>スピード対応</h4>
-        <p>見積もりから契約まで、デジタル化されたプロセスで驚くほどスムーズ。お客様の時間を大切にします。</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🌐</div>
-        <h4>全国対応</h4>
-        <p>全国の物件情報・整備工場ネットワークと連携。どこにいても最適なサービスをご提供します。</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">💡</div>
-        <h4>透明な料金</h4>
-        <p>隠れた費用は一切なし。AI見積もりで事前に料金を明確化し、納得のうえでご利用いただけます。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 軽貨物配送業 詳細 ===== -->
-<section style="padding:80px 24px;background:#fff;" id="delivery-service">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div class="section-header">
-      <h2>軽貨物配送業</h2>
-      <p>地域に密着した個人・EC向け配送サービス。迅速・丁寧・確実にお届けします。</p>
-    </div>
-
-    <!-- サービス内容 -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;margin-bottom:48px;">
-      <div>
-        <div style="background:linear-gradient(135deg,#1a2e1a,#2d6a2d);border-radius:20px;padding:48px 40px;color:#fff;">
-          <div style="font-size:56px;margin-bottom:20px;">🚐</div>
-          <h3 style="font-size:28px;font-weight:700;letter-spacing:-0.5px;margin-bottom:14px;line-height:1.2;">地域密着で、<br>丁寧にお届けします。</h3>
-          <p style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:24px;">平塚市・秦野市・伊勢原市を中心に、EC通販・個人宅への軽貨物配送を行っています。地域をよく知るドライバーが、スピーディかつ丁寧に対応します。</p>
-          <a href="#contact" class="btn-primary" style="display:inline-block;background:#fff;color:#1a3d1a;font-weight:600;">配送を依頼する</a>
+  <main id="main">
+    <section class="hero" id="top" aria-label="株式会社琉新">
+      <div class="hero-inner">
+        <p class="eyebrow">神奈川県平塚市城所903-1 / 年中無休 9:00-18:00</p>
+        <h1>地域の暮らしと移動を、ひとつの窓口で。</h1>
+        <p class="hero-lead">株式会社琉新は、車整備工場・不動産会社・軽貨物配送業を展開する平塚市の地域密着企業です。相談しやすく、説明がわかりやすく、次の一歩が決めやすい対応を大切にしています。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="tel:0463530151">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+            0463-53-0151
+          </a>
+          <a class="button button-outline" href="#contact">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            問い合わせ先を見る
+          </a>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-        <div style="background:#f5f5f7;border-radius:16px;padding:24px 20px;">
-          <div style="font-size:28px;margin-bottom:10px;">📦</div>
-          <h4 style="font-size:16px;font-weight:600;margin-bottom:6px;">EC・通販配送</h4>
-          <p style="font-size:13px;color:#6e6e73;line-height:1.6;">ネットショップの商品配送を代行。翌日・当日配送にも対応します。</p>
+    </section>
+
+    <div class="hero-strip" aria-label="基本情報">
+      <div class="hero-stat reveal">
+        <strong>3事業</strong>
+        <span>車整備・不動産・軽貨物配送</span>
+      </div>
+      <div class="hero-stat reveal">
+        <strong>年中無休</strong>
+        <span>9:00から18:00まで営業</span>
+      </div>
+      <div class="hero-stat reveal">
+        <strong>3エリア</strong>
+        <span>平塚市・秦野市・伊勢原市</span>
+      </div>
+      <div class="hero-stat reveal">
+        <strong>求人募集中</strong>
+        <span>軽貨物ドライバー 業務委託</span>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="inner">
+        <p class="section-kicker">SERVICES</p>
+        <h2 class="section-title">ひとつの会社で、車・住まい・配送の相談まで。</h2>
+        <p class="section-copy">必要な時にすぐ相談できる地域の窓口として、整備、住まい探し、個人・EC配送をわかりやすくご案内します。</p>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-3 3-3-3Z"/></svg>
+              </span>
+              <span class="pill">CAR MAINTENANCE</span>
+            </div>
+            <img class="service-image" src="./images/service-car.png" alt="白い背景に車を配置した車整備サービスのイメージ" loading="lazy" />
+            <div>
+              <h3>車整備工場</h3>
+              <p>点検、修理、持込みパーツ取付、板金塗装など、日常のメンテナンスから困りごとまで相談しやすい整備窓口です。</p>
+            </div>
+            <a class="service-link" href="#maintenance">車整備を見る <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon amber" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+              </span>
+              <span class="pill">REAL ESTATE</span>
+            </div>
+            <img class="service-image" src="./images/service-realestate.png" alt="住宅模型と鍵を置いた不動産相談のイメージ" loading="lazy" />
+            <div>
+              <h3>不動産会社</h3>
+              <p>売買、賃貸、住み替え、投資相談まで、初めての方にも判断しやすいように条件と選択肢を整理してご案内します。</p>
+            </div>
+            <a class="service-link" href="#realestate">不動産を見る <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+              </span>
+              <span class="pill">EC / PERSONAL</span>
+            </div>
+            <img class="service-image" src="./images/service-delivery.png" alt="軽貨物車両と配送荷物のイメージ" loading="lazy" />
+            <div>
+              <h3>軽貨物配送業</h3>
+              <p>個人宅配送、EC配送を中心に、地域の荷物を丁寧に届けます。軽貨物ドライバーの業務委託求人も募集中です。</p>
+            </div>
+            <a class="service-link" href="#delivery">軽貨物を見る <span aria-hidden="true">→</span></a>
+          </article>
         </div>
-        <div style="background:#f5f5f7;border-radius:16px;padding:24px 20px;">
-          <div style="font-size:28px;margin-bottom:10px;">🏠</div>
-          <h4 style="font-size:16px;font-weight:600;margin-bottom:6px;">個人宅配送</h4>
-          <p style="font-size:13px;color:#6e6e73;line-height:1.6;">引越し小荷物・家具・家電など、個人のお荷物も丁寧にお届けします。</p>
-        </div>
-        <div style="background:#f5f5f7;border-radius:16px;padding:24px 20px;">
-          <div style="font-size:28px;margin-bottom:10px;">⚡</div>
-          <h4 style="font-size:16px;font-weight:600;margin-bottom:6px;">当日・緊急配送</h4>
-          <p style="font-size:13px;color:#6e6e73;line-height:1.6;">急ぎの荷物も素早く対応。緊急依頼もお気軽にご相談ください。</p>
-        </div>
-        <div style="background:#f5f5f7;border-radius:16px;padding:24px 20px;">
-          <div style="font-size:28px;margin-bottom:10px;">🔒</div>
-          <h4 style="font-size:16px;font-weight:600;margin-bottom:6px;">安全・丁寧な配送</h4>
-          <p style="font-size:13px;color:#6e6e73;line-height:1.6;">荷物の安全を最優先に。配送状況は随時ご連絡します。</p>
-        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 対応エリア -->
-    <div style="background:#f5f5f7;border-radius:20px;padding:40px;margin-bottom:32px;">
-      <h3 style="font-size:22px;font-weight:700;text-align:center;margin-bottom:8px;letter-spacing:-0.3px;">📍 対応エリア</h3>
-      <p style="text-align:center;color:#6e6e73;font-size:14px;margin-bottom:28px;">以下のエリアを中心に配送を承っております</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-        <div style="background:#fff;border-radius:14px;padding:28px 20px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-          <div style="font-size:36px;margin-bottom:10px;">🗾</div>
-          <div style="font-size:20px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">平塚市</div>
-          <div style="font-size:12px;color:#6e6e73;line-height:1.6;">本社所在地エリア<br>全域対応</div>
-          <div style="margin-top:12px;display:inline-block;background:#e8f5e8;color:#2d6a2d;font-size:11px;font-weight:600;padding:3px 10px;border-radius:980px;">メインエリア</div>
+    <section class="section band" id="maintenance">
+      <div class="inner split">
+        <div class="reveal">
+          <p class="section-kicker">CAR MAINTENANCE</p>
+          <h2 class="section-title">車のことを、作業前からわかりやすく。</h2>
+          <p class="section-copy">見積もり、作業内容、仕上がりまでを丁寧に説明します。持込みパーツの取付や日常整備など、まずは状態と希望をお聞かせください。</p>
+          <div class="section-actions">
+            <a class="button button-dark" href="tel:0463530151">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+              整備を相談
+            </a>
+            <a class="button button-light" href="https://www.goo-net.com/pit/shop/0170505/top" target="_blank" rel="noopener">goo-netを見る</a>
+          </div>
         </div>
-        <div style="background:#fff;border-radius:14px;padding:28px 20px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-          <div style="font-size:36px;margin-bottom:10px;">🗾</div>
-          <div style="font-size:20px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">秦野市</div>
-          <div style="font-size:12px;color:#6e6e73;line-height:1.6;">市内全域対応<br>定期ルートあり</div>
-          <div style="margin-top:12px;display:inline-block;background:#e8f5e8;color:#2d6a2d;font-size:11px;font-weight:600;padding:3px 10px;border-radius:980px;">対応エリア</div>
-        </div>
-        <div style="background:#fff;border-radius:14px;padding:28px 20px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-          <div style="font-size:36px;margin-bottom:10px;">🗾</div>
-          <div style="font-size:20px;font-weight:700;color:#1d1d1f;margin-bottom:6px;">伊勢原市</div>
-          <div style="font-size:12px;color:#6e6e73;line-height:1.6;">市内全域対応<br>定期ルートあり</div>
-          <div style="margin-top:12px;display:inline-block;background:#e8f5e8;color:#2d6a2d;font-size:11px;font-weight:600;padding:3px 10px;border-radius:980px;">対応エリア</div>
+        <div class="visual-panel reveal" role="img" aria-label="車整備サービスのイメージ">
+          <div class="visual-caption">
+            <strong>整備の相談から作業後の確認まで</strong>
+            <span>状態を見ながら、必要な作業をわかりやすくご案内します。</span>
+          </div>
         </div>
       </div>
-      <p style="text-align:center;font-size:12px;color:#6e6e73;margin-top:20px;">※ 上記エリア外もご相談承ります。まずはお気軽にお問い合わせください。</p>
-    </div>
-  </div>
-</section>
 
-<!-- ===== 求人募集 ===== -->
-<section style="padding:80px 24px;background:linear-gradient(160deg,#1a2e1a 0%,#2d6a2d 100%);" id="recruit">
-  <div style="max-width:1000px;margin:0 auto;">
-    <div class="section-header">
-      <h2 style="color:#fff;">求人募集</h2>
-      <p style="color:rgba(255,255,255,0.7);">株式会社琉新では、軽貨物ドライバーを募集しています。</p>
-    </div>
+      <div class="inner">
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <svg class="line-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m14.7 6.3 3 3"/><path d="M9.3 11.7 3 18l3 3 6.3-6.3"/><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l3 3a4 4 0 0 0 5.4-5.4Z"/></svg>
+            <h3>持込みパーツ取付</h3>
+            <p>タイヤ、ホイール、ナビ、ETC、ドライブレコーダー、外装パーツなどをご相談いただけます。</p>
+          </article>
+          <article class="feature-card reveal">
+            <svg class="line-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M5 8h14"/><path d="M5 16h14"/></svg>
+            <h3>整備・点検・車検</h3>
+            <p>日常点検、オイル交換、車検、電装系の相談など、車の状態に合わせて必要な作業を整理します。</p>
+          </article>
+          <article class="feature-card reveal">
+            <svg class="line-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/><path d="m9 12 2 2 4-5"/></svg>
+            <h3>事前説明と明確な進行</h3>
+            <p>作業内容と費用感を事前に確認し、ご納得いただいてから進めることを大切にしています。</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <!-- 求人カード -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px;">
-      <!-- 正社員・業務委託 -->
-      <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:36px 32px;">
-        <div style="display:inline-block;background:#2d6a2d;color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:980px;margin-bottom:16px;">業務委託</div>
-        <h3 style="font-size:24px;font-weight:700;color:#fff;margin-bottom:16px;letter-spacing:-0.3px;">軽貨物ドライバー<br>（業務委託）</h3>
-        <ul style="list-style:none;padding:0;">
-          <li style="display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:14px;color:rgba(255,255,255,0.85);">
-            <span style="color:#4ade80;font-weight:700;flex-shrink:0;">✓</span>自分のペースで働ける
-          </li>
-          <li style="display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:14px;color:rgba(255,255,255,0.85);">
-            <span style="color:#4ade80;font-weight:700;flex-shrink:0;">✓</span>週1日〜OK・副業歓迎
-          </li>
-          <li style="display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;font-size:14px;color:rgba(255,255,255,0.85);">
-            <span style="color:#4ade80;font-weight:700;flex-shrink:0;">✓</span>軽バン持込・車両貸出相談可
-          </li>
-          <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,0.85);">
-            <span style="color:#4ade80;font-weight:700;flex-shrink:0;">✓</span>経験不問・丁寧にサポート
-          </li>
-        </ul>
-      </div>
-      <!-- 待遇・条件 -->
-      <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:36px 32px;">
-        <div style="display:inline-block;background:#0071e3;color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:980px;margin-bottom:16px;">待遇・条件</div>
-        <h3 style="font-size:24px;font-weight:700;color:#fff;margin-bottom:16px;letter-spacing:-0.3px;">充実した<br>サポート体制</h3>
-        <table style="width:100%;font-size:13px;color:rgba(255,255,255,0.85);">
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
-            <td style="padding:10px 0;color:rgba(255,255,255,0.5);width:80px;">勤務地</td>
-            <td style="padding:10px 0;">平塚市・秦野市・伊勢原市</td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
-            <td style="padding:10px 0;color:rgba(255,255,255,0.5);">勤務時間</td>
-            <td style="padding:10px 0;">9:00〜18:00（応相談）</td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
-            <td style="padding:10px 0;color:rgba(255,255,255,0.5);">報酬</td>
-            <td style="padding:10px 0;">歩合制（詳細はご相談）</td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(255,255,255,0.1);">
-            <td style="padding:10px 0;color:rgba(255,255,255,0.5);">必要資格</td>
-            <td style="padding:10px 0;">普通自動車免許（AT可）</td>
-          </tr>
-          <tr>
-            <td style="padding:10px 0;color:rgba(255,255,255,0.5);">応募資格</td>
-            <td style="padding:10px 0;">18歳以上・経験不問</td>
-          </tr>
-        </table>
-      </div>
-    </div>
+    <section class="section" id="realestate">
+      <div class="inner">
+        <p class="section-kicker">REAL ESTATE</p>
+        <h2 class="section-title">住まいの判断を、焦らず、わかりやすく。</h2>
+        <p class="section-copy">物件探しや売買の相談は、条件整理が大切です。希望エリア、予算、暮らし方を一緒に整理し、無理のない選択肢をご提案します。</p>
 
-    <!-- 応募ボタン -->
-    <div style="text-align:center;">
-      <p style="color:rgba(255,255,255,0.7);font-size:15px;margin-bottom:24px;">まずはお気軽にお電話またはメールでお問い合わせください。</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-        <a href="tel:0078-6051-9679" style="display:inline-block;background:#fff;color:#1a3d1a;padding:14px 32px;border-radius:980px;font-size:16px;font-weight:600;">📞 0078-6051-9679（無料）</a>
-        <a href="mailto:recruit@ryushin.jp" style="display:inline-block;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.5);padding:13px 32px;border-radius:980px;font-size:16px;font-weight:500;">✉ 採用応募メール</a>
+        <div class="service-detail">
+          <article class="detail-block reveal">
+            <h3>初めての相談でも安心</h3>
+            <p class="section-copy">購入・売却・賃貸・投資など、目的に合わせて必要な手続きと確認事項を段階的にご説明します。</p>
+            <ul class="check-list">
+              <li>希望条件の整理</li>
+              <li>資金計画や相場感の確認</li>
+              <li>物件比較のポイント整理</li>
+            </ul>
+          </article>
+          <article class="detail-block reveal">
+            <h3>データを使った提案補助</h3>
+            <p class="section-copy">AIや市場データは判断を助ける道具として活用し、最終的には人が確認してわかりやすくお伝えします。</p>
+            <ul class="check-list">
+              <li>相場・周辺情報の整理</li>
+              <li>条件に合う選択肢の比較</li>
+              <li>リスクや確認事項の明確化</li>
+            </ul>
+          </article>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ===== AI Section ===== -->
-<section class="ai-section" id="ai">
-  <div class="ai-card">
-    <div class="ai-text">
-      <h2>AI が、市場を<br><span>リアルタイム分析</span></h2>
-      <p>Claude と Gemini を組み合わせたデュアルAIシステムが、不動産市場データや整備コストをスクレイピング・分析。投資判断に必要なインサイトを自動生成します。</p>
-      <div class="ai-badges">
-        <span class="ai-badge">Claude API</span>
-        <span class="ai-badge">Gemini API</span>
-        <span class="ai-badge">自動スクレイピング</span>
-        <span class="ai-badge">レポート自動生成</span>
-      </div>
-      <a href="#contact" class="btn-primary">デモを依頼する</a>
-    </div>
-    <div class="ai-visual">
-      <div class="line"><span class="dot dot-blue"></span><span>物件データ取得中...</span></div>
-      <div class="line"><span class="dot dot-green"></span><strong>東京都港区 平均㎡単価: ¥1,250,000</strong></div>
-      <div class="line"><span class="dot dot-blue"></span><span>利回り分析: 4.8% (市場平均比 +0.6%)</span></div>
-      <div class="line"><span class="dot dot-orange"></span><span>AI推奨スコア: ★★★★☆</span></div>
-      <div class="line"><span class="dot dot-green"></span><strong>レポート生成完了 ✓</strong></div>
-    </div>
-  </div>
-</section>
+    <section class="section band" id="delivery">
+      <div class="inner">
+        <p class="section-kicker">LIGHT CARGO DELIVERY</p>
+        <h2 class="section-title">個人・EC配送を中心に、地域へ丁寧に届けます。</h2>
+        <p class="section-copy">平塚市をメインに、秦野市・伊勢原市エリアで軽貨物配送に対応。企業向けBtoB配送ではなく、個人宅配送・EC配送を中心としています。</p>
+        <div class="note">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+          <span>軽貨物配送は個人・EC配送のみ。企業向けBtoB配送は現在対象外です。</span>
+        </div>
 
-<!-- ===== Stats ===== -->
-<section class="stats">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-num">2,<span>500</span>+</div>
-      <div class="stat-label">取扱物件数</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num"><span>98</span>%</div>
-      <div class="stat-label">顧客満足度</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num"><span>15</span>年</div>
-      <div class="stat-label">業界実績</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num"><span>24</span>h</div>
-      <div class="stat-label">AIサポート対応</div>
-    </div>
-  </div>
-</section>
+        <div class="job-grid" aria-label="軽貨物ドライバー募集条件">
+          <div class="job-card reveal"><strong>業務委託</strong><span>自分の働き方に合わせて相談</span></div>
+          <div class="job-card reveal"><strong>歩合制</strong><span>稼働内容に応じた報酬</span></div>
+          <div class="job-card reveal"><strong>週1日〜OK</strong><span>無理なく始めやすい条件</span></div>
+          <div class="job-card reveal"><strong>18歳以上</strong><span>普通免許AT可</span></div>
+        </div>
 
-<!-- ===== 工賃価格帯 ===== -->
-<section class="features" id="price" style="background:#fff;">
-  <div class="features-inner">
-    <div class="section-header">
-      <h2>工賃・サービス一覧</h2>
-      <p>金額についてはお気軽にご相談ください。まずはお見積もりから。</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card" style="border:1.5px solid #f0f0f0;">
-        <div class="feature-icon">🔧</div>
-        <h4>オイル交換</h4>
-        <p>エンジンオイル・フィルター交換。定期的なメンテナンスでエンジンを長持ちさせます。</p>
-        <p style="margin-top:12px;font-size:13px;color:#0071e3;font-weight:600;">要お見積もり</p>
+        <div class="section-actions">
+          <a class="button button-primary" href="tel:0463530151">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+            電話で応募・相談する
+          </a>
+          <a class="button button-light" href="#contact">問い合わせ先を見る</a>
+        </div>
       </div>
-      <div class="feature-card" style="border:1.5px solid #f0f0f0;">
-        <div class="feature-icon">🚗</div>
-        <h4>タイヤ・ホイール交換</h4>
-        <p>持込みタイヤ・ホイールの取り付けも対応。バランス調整込みで安全に仕上げます。</p>
-        <p style="margin-top:12px;font-size:13px;color:#0071e3;font-weight:600;">要お見積もり</p>
-      </div>
-      <div class="feature-card" style="border:1.5px solid #f0f0f0;">
-        <div class="feature-icon">📡</div>
-        <h4>ナビ・ETC・ドラレコ取付</h4>
-        <p>持込みパーツの取り付けも承ります。ナビ・ETC・ドライブレコーダーなど電装系全般。</p>
-        <p style="margin-top:12px;font-size:13px;color:#0071e3;font-weight:600;">要お見積もり</p>
-      </div>
-      <div class="feature-card" style="border:1.5px solid #f0f0f0;">
-        <div class="feature-icon">🎨</div>
-        <h4>板金・塗装</h4>
-        <p>小さなキズ・へこみから大きな損傷まで対応。丁寧な仕上げで新車同様の美しさに。</p>
-        <p style="margin-top:12px;font-size:13px;color:#0071e3;font-weight:600;">要お見積もり</p>
-      </div>
-      <div class="feature-card" style="border:1.5px solid #f0f0f0;">
-        <div class="feature-icon">💡</div>
-        <h4>ライト・電装系修理</h4>
-        <p>ヘッドライト・ウィンカー・電装系の不具合を迅速に診断・修理します。</p>
-        <p style="margin-top:12px;font-size:13px;color:#0071e3;font-weight:600;">要お見積もり</p>
-      </div>
-      <div class="feature-card" style="border:1.5px solid #f0f0f0;">
-        <div class="feature-icon">✨</div>
-        <h4>ボディコーティング</h4>
-        <p>ガラスコーティングで愛車の輝きを長期間維持。内装補修・クリーニングも対応。</p>
-        <p style="margin-top:12px;font-size:13px;color:#0071e3;font-weight:600;">要お見積もり</p>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:32px;font-size:14px;color:#6e6e73;">
-      ※ 工賃は車種・作業内容により異なります。事前にお気軽にご相談ください。
-    </p>
-  </div>
-</section>
+    </section>
 
-<!-- ===== 作業の様子 ===== -->
-<section style="background:#f5f5f7;padding:80px 24px;" id="works">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div class="section-header">
-      <h2>作業の様子</h2>
-      <p>丁寧・迅速・確実。プロの技術でお客様の大切な車をお預かりします。</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-      <div style="background:#1a1a2e;border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-        <span style="font-size:52px;">🔩</span>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">エンジン整備</span>
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="inner">
+        <p class="section-kicker">WORKS & SCENES</p>
+        <h2 class="section-title" id="gallery-title">車・住まい・配送が、ひと目で伝わるビジュアルへ。</h2>
+        <p class="section-copy">3つの事業を明るいイメージ図で整理し、初めて訪れた方にもサービス内容がすぐ伝わるようにしました。</p>
+        <div class="gallery-grid">
+          <div class="gallery-card large workshop reveal" role="img" aria-label="車整備サービスのイメージ">
+            <div class="gallery-label"><strong>車整備サービス</strong><span>車の状態確認や整備相談をわかりやすく</span></div>
+          </div>
+          <div class="gallery-card vehicle reveal" role="img" aria-label="軽貨物配送車両">
+            <div class="gallery-label"><strong>配送車両・積み込み</strong><span>個人宅配送・EC配送を中心に対応</span></div>
+          </div>
+          <div class="gallery-card property reveal" role="img" aria-label="不動産相談のイメージ">
+            <div class="gallery-label"><strong>不動産相談</strong><span>条件整理から選択肢の比較まで</span></div>
+          </div>
+          <div class="gallery-card parts reveal" role="img" aria-label="3事業をまとめたイメージ">
+            <div class="gallery-label"><strong>3事業のつながり</strong><span>車・住まい・配送をひとつの窓口で</span></div>
+          </div>
+        </div>
       </div>
-      <div style="background:#16213e;border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-        <span style="font-size:52px;">🚙</span>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">タイヤ交換作業</span>
-      </div>
-      <div style="background:#0f3460;border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-        <span style="font-size:52px;">🎨</span>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">板金・塗装</span>
-      </div>
-      <div style="background:#0a2942;border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-        <span style="font-size:52px;">📡</span>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">電装取付</span>
-      </div>
-      <div style="background:#0d3b5e;border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-        <span style="font-size:52px;">✨</span>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">コーティング</span>
-      </div>
-      <div style="background:#1a6b8a;border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-        <span style="font-size:52px;">🔍</span>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">車検・点検</span>
-      </div>
-    </div>
-    <p style="text-align:center;margin-top:20px;font-size:13px;color:#6e6e73;">
-      ※ 実際の作業写真は順次掲載予定です。
-    </p>
-  </div>
-</section>
+    </section>
 
-<!-- ===== 会社情報・アクセス ===== -->
-<section style="padding:80px 24px;background:#fff;" id="access">
-  <div style="max-width:1000px;margin:0 auto;">
-    <div class="section-header">
-      <h2>会社情報・アクセス</h2>
-      <p>お気軽にお越しください。無料駐車場完備。</p>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
-      <!-- 会社情報テーブル -->
-      <div style="background:#f5f5f7;border-radius:20px;padding:36px;">
-        <table style="width:100%;border-collapse:collapse;font-size:15px;">
-          <tr style="border-bottom:1px solid rgba(0,0,0,0.08);">
-            <td style="padding:14px 0;color:#6e6e73;font-size:13px;white-space:nowrap;width:90px;">会社名</td>
-            <td style="padding:14px 0;font-weight:600;color:#1d1d1f;">株式会社琉新</td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(0,0,0,0.08);">
-            <td style="padding:14px 0;color:#6e6e73;font-size:13px;">代表者</td>
-            <td style="padding:14px 0;font-weight:600;color:#1d1d1f;">代表取締役　新里 旭</td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(0,0,0,0.08);">
-            <td style="padding:14px 0;color:#6e6e73;font-size:13px;">所在地</td>
-            <td style="padding:14px 0;color:#1d1d1f;">〒254-0005<br>神奈川県平塚市城所903-1</td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(0,0,0,0.08);">
-            <td style="padding:14px 0;color:#6e6e73;font-size:13px;">電話番号</td>
-            <td style="padding:14px 0;">
-              <a href="tel:0078-6051-9679" style="color:#0071e3;font-weight:600;font-size:18px;">0078-6051-9679</a>
-              <span style="display:block;font-size:12px;color:#6e6e73;margin-top:2px;">通話無料</span>
-            </td>
-          </tr>
-          <tr style="border-bottom:1px solid rgba(0,0,0,0.08);">
-            <td style="padding:14px 0;color:#6e6e73;font-size:13px;">営業時間</td>
-            <td style="padding:14px 0;color:#1d1d1f;">9:00 〜 18:00<br><span style="font-size:12px;color:#6e6e73;">月〜日曜日（年中無休）</span></td>
-          </tr>
-          <tr>
-            <td style="padding:14px 0;color:#6e6e73;font-size:13px;">事業内容</td>
-            <td style="padding:14px 0;color:#1d1d1f;font-size:13px;line-height:1.8;">車整備・修理・板金塗装<br>パーツ持込取付<br>不動産売買・賃貸・投資相談</td>
-          </tr>
-        </table>
+    <section class="section band" id="access">
+      <div class="inner">
+        <p class="section-kicker">AREA & ACCESS</p>
+        <h2 class="section-title">平塚市を拠点に、秦野市・伊勢原市へ。</h2>
+        <p class="section-copy">ご来店前の確認やご相談は、お電話でお気軽にご連絡ください。</p>
+        <div class="areas">
+          <iframe
+            class="area-map"
+            title="株式会社琉新 所在地マップ"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E5%B9%B3%E5%A1%9A%E5%B8%82%E5%9F%8E%E6%89%80903-1&output=embed"></iframe>
+          <div class="area-list">
+            <div class="area-item reveal">
+              <span class="area-number">1</span>
+              <div><strong>平塚市</strong><span>メイン対応エリア / 所在地: 城所903-1</span></div>
+            </div>
+            <div class="area-item reveal">
+              <span class="area-number">2</span>
+              <div><strong>秦野市</strong><span>車整備・軽貨物配送の相談エリア</span></div>
+            </div>
+            <div class="area-item reveal">
+              <span class="area-number">3</span>
+              <div><strong>伊勢原市</strong><span>車整備・軽貨物配送の相談エリア</span></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- マップ -->
-      <div style="border-radius:20px;overflow:hidden;min-height:320px;background:#e8e8ed;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
-        <iframe
-          src="https://maps.google.com/maps?q=神奈川県平塚市城所903-1&output=embed&z=15"
-          width="100%" height="320" style="border:0;display:block;" allowfullscreen loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="inner">
+        <p class="section-kicker">CONTACT</p>
+        <h2 class="section-title">車・住まい・配送・求人の相談はこちら。</h2>
+        <p class="section-copy">お問い合わせは電話のみで受け付けています。車整備・不動産・軽貨物配送・求人のご相談は、営業時間内にお電話ください。</p>
+
+        <div class="contact-layout">
+          <aside class="contact-info reveal" aria-label="会社情報">
+            <dl>
+              <div>
+                <dt>会社名</dt>
+                <dd>株式会社琉新</dd>
+              </div>
+              <div>
+                <dt>代表者</dt>
+                <dd>代表取締役　新里 旭</dd>
+              </div>
+              <div>
+                <dt>所在地</dt>
+                <dd>〒254-0014<br>神奈川県平塚市城所903-1</dd>
+              </div>
+              <div>
+                <dt>電話番号</dt>
+                <dd><a href="tel:0463530151">0463-53-0151</a></dd>
+              </div>
+              <div>
+                <dt>営業時間</dt>
+                <dd>9:00〜18:00（月〜日曜日 / 年中無休）</dd>
+              </div>
+              <div>
+                <dt>事業内容</dt>
+                <dd>車整備工場 / 不動産会社 / 軽貨物配送業</dd>
+              </div>
+              <div>
+                <dt>免許</dt>
+                <dd>宅地建物取引業 神奈川県知事免許（０１）第０３２１４０号</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <section class="contact-call reveal" aria-label="電話問い合わせ">
+            <div>
+              <h3>お電話でお問い合わせください。</h3>
+              <p>内容をお手元にご用意のうえ、営業時間内にお電話ください。</p>
+            </div>
+            <a class="phone-large" href="tel:0463530151" aria-label="0463-53-0151に電話する">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L8 9.7a16 16 0 0 0 6.3 6.3l1.22-1.22a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+              0463-53-0151
+            </a>
+            <ul class="phone-note">
+              <li>受付時間: 9:00〜18:00</li>
+              <li>月〜日曜日 / 年中無休</li>
+              <li>車整備・不動産・軽貨物配送・求人について相談できます</li>
+            </ul>
+          </section>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ===== CTA ===== -->
-<section class="cta-section" id="contact">
-  <h2>まずは、無料相談から。</h2>
-  <p>AIが最適なプランをご提案します。お気軽にどうぞ。</p>
-  <div class="hero-actions">
-    <a href="mailto:contact@ryushin.jp" class="btn-primary">無料相談を申し込む</a>
-    <a href="tel:0078-6051-9679" class="btn-secondary">📞 0078-6051-9679（無料）</a>
-  </div>
-</section>
+    <section class="section compact band" id="faq">
+      <div class="inner">
+        <p class="section-kicker">FAQ</p>
+        <h2 class="section-title">よくあるご質問</h2>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>対応エリアはどこですか？</summary>
+            <p>平塚市をメインに、秦野市、伊勢原市を中心として対応しています。内容によって異なる場合がありますので、まずはお問い合わせください。</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>軽貨物配送は企業向けにも対応していますか？</summary>
+            <p>現在は個人向け配送およびEC配送を中心に対応しています。企業向けBtoB配送は対象外です。</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>軽貨物ドライバーは未経験でも応募できますか？</summary>
+            <p>未経験の方も応募できます。業務委託、歩合制、週1日から相談可能で、18歳以上、普通免許AT可です。</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>営業時間を教えてください。</summary>
+            <p>営業時間は9:00〜18:00です。月曜日から日曜日まで年中無休で営業しています。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<!-- ===== Footer ===== -->
-<footer>
-  <div class="footer-inner">
+  <footer class="footer">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>株式会社<span>琉新</span></h3>
-        <p>代表取締役　新里 旭</p>
-        <p style="margin-top:8px;">AIと専門知識を融合させ、<br>車と不動産のワンストップサービスを提供します。</p>
+      <div>
+        <h2>株式会社琉新</h2>
+        <p>神奈川県平塚市城所903-1<br>車整備工場 / 不動産会社 / 軽貨物配送業</p>
       </div>
-      <div class="footer-col">
-        <h4>車整備工場</h4>
+      <div>
+        <h3>サービス</h3>
         <ul>
-          <li><a href="#">定期点検</a></li>
-          <li><a href="#">車検</a></li>
-          <li><a href="#">修理・板金</a></li>
-          <li><a href="#">AI診断</a></li>
+          <li><a href="#maintenance">車整備</a></li>
+          <li><a href="#realestate">不動産</a></li>
+          <li><a href="#delivery">軽貨物配送</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>不動産</h4>
+      <div>
+        <h3>求人</h3>
         <ul>
-          <li><a href="#">物件検索</a></li>
-          <li><a href="#">投資相談</a></li>
-          <li><a href="#">売却査定</a></li>
-          <li><a href="#">AI市場分析</a></li>
+          <li><a href="#delivery">軽貨物ドライバー</a></li>
+          <li><a href="#contact">応募相談</a></li>
+          <li><a href="tel:0463530151">電話する</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>軽貨物配送</h4>
+      <div>
+        <h3>会社情報</h3>
         <ul>
-          <li><a href="#delivery-service">EC・通販配送</a></li>
-          <li><a href="#delivery-service">個人宅配送</a></li>
-          <li><a href="#delivery-service">当日・緊急配送</a></li>
-          <li><a href="#recruit">求人募集</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>会社情報</h4>
-        <ul>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">採用情報</a></li>
-          <li><a href="#">プライバシー</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 株式会社琉新　代表取締役 新里旭　All rights reserved.</p>
-      <p>プライバシーポリシー｜利用規約</p>
+      <span>© 2026 株式会社琉新. All rights reserved.</span>
+      <span>宅地建物取引業 神奈川県知事免許（０１）第０３２１４０号</span>
     </div>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
